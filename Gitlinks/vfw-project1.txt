@@ -1,9 +1,15 @@
 Bernice Johnson
 Visual Frameworks
-Project 3
-July 18, 2012
+Project 4
+July 24, 2012
 
  My Git links :
+
+week 4
+https://github.com/bjohnson6/vfw-project-4.git
+
+
+
 week 3
 https://github.com/bjohnson6/vfw-project-3-continued..
 

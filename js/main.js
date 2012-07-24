@@ -102,7 +102,7 @@ function storeData(key){
 	    item.where          =["Where:",$("where").value];
 	    item.startd         =["Start Date:",$("startd").value];
 	    item.endd           =["End Date:", $("endd").value];
-	    item.zodiac         =["Are your Zodiac signs compatible?:", zodiacValue];
+	    item.zodiac         =["Relationship Status:", zodiacValue];
 	    item.range          =["Rate My Lover:",$("range").value]; 
 	    item.addnotes       =["Add Notes:",$("addnotes").value];
 	 //save data ito local storage: Use stringify to convert object to a string.
@@ -189,9 +189,9 @@ function editItem(){
 	$("endd").value  =item.endd[1];
 	var radios = document.forms[0].same;
 	for(var i=0; i<radios.length; i++){
-		if(radios[i].value == "Yes" && item.same[1] == "Yes"){
+		if(radios[i].value == "Dating" && item.same[1] == "Dating"){ //check
 			radios[i].setAttribute("checked", "checked");
-		}else if(radios[i].value == "No" && item.same[1] == "No"){
+		}else if(radios[i].value == "A couple" && item.same[1] == "A couple"){
 			radios[i].setAttribute("checked", "checked");
 		}
 	}
@@ -276,7 +276,7 @@ var addAnEvent =[
    "First Said I Love You!", 
    "Our Song",
    "--Choose Something Else--",
-   "Our Names",
+ //  "Our Names",
    "Relationship Status",
    "Calculate Time Together",
    "Note A Special Moment"
