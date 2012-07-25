@@ -150,11 +150,11 @@ function getData() {
 	}
 }
 //get the image for the right category
-function getImage(makeEvents, makeSubList){
+function getImage(catName, makeSubList){
 	var imageLi = document.createElement("li");
 	makeSubList.appendChild(imageLi);
 	var newImg = document.createElement("img");
-	var setSrc = newImg.setAttribute("src", "images/"+ makeEvents + ".png");
+	var setSrc = newImg.setAttribute("src", "img/"+ catName + ".png");
 	imageLi.appendChild(newImg);
 }
 //week 4 adding json.Auto populate local storage
