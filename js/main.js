@@ -137,6 +137,7 @@ function getData() {
 		var obj = JSON.parse(value);
 		var makeSubList = document.createElement("ul");
 		makeLi.appendChild(makeSubList);
+		getImage(obj.event[1], makeSubList); ///week 4
 		for(var n in obj){ //////////////////////////////
 			var makeSubLi = document.createElement("li");
 			makeSubList.appendChild(makeSubLi);
@@ -147,6 +148,14 @@ function getData() {
 		}
 		makeItemLinks(localStorage.key(i), linksLi);//create our edit and delete buttons/link fr each item in local storage//WEEK 3 ADD
 	}
+}
+//get the image for the right category
+function getImage(makeEvents, makeSubList){
+	var imageLi = document.createElement("li");
+	makeSubList.appendChild(imageLi);
+	var newImg = document.createElement("img");
+	var setSrc = newImg.setAttribute("src", "images/"+ makeEvents + ".png");
+	imageLi.appendChild(newImg);
 }
 //week 4 adding json.Auto populate local storage
 function autoFillData(){
