@@ -116,7 +116,8 @@ function storeData(key){
 function getData() {
 	toggleControls("on");
 	if(localStorage.length === 0){
-		alert("There is no new Moments.");
+		alert("There is no new Moments so default data was added.");
+		autoFillData();
 	}
 	// Write Data from local storage
 	var makeDiv = document.createElement("div");
@@ -147,6 +148,18 @@ function getData() {
 		makeItemLinks(localStorage.key(i), linksLi);//create our edit and delete buttons/link fr each item in local storage//WEEK 3 ADD
 	}
 }
+//week 4 adding json.Auto populate local storage
+function autoFillData(){
+	//the actual json data required for this to work is coming from our json.js file which is loaded from our html page
+	//store the json object into local storage.
+	for(var n in json){
+		var id = Math.floor(Math.random()*100000001);
+		localStorage.setItem(id, JSON.stringify(json[n]));
+	}
+}
+
+
+
 //week 3 add//Make Item Links
 //create the edit and delete links for each stored item when displayed.
 function makeItemLinks(key, linksLi){
