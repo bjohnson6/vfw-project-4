@@ -137,7 +137,7 @@ function getData() {
 		var obj = JSON.parse(value);
 		var makeSubList = document.createElement("ul");
 		makeLi.appendChild(makeSubList);
-		getImage(obj.event[1], makeSubList); ///week 4
+		getImage(obj.event[1], makeSubList); ///week 4 
 		for(var n in obj){ //////////////////////////////
 			var makeSubLi = document.createElement("li");
 			makeSubList.appendChild(makeSubLi);
