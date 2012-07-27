@@ -102,7 +102,7 @@ function storeData(key){
 	    item.where          =["Where:",$("where").value];
 	    item.startd         =["Start Date:",$("startd").value];
 	    item.endd           =["End Date:", $("endd").value];
-	    item.zodiac         =["Relationship Status:", zodiacValue];
+	    item.zodiac         =["Relationship Status:", zodiacValue]; //////
 	    item.range          =["Rate My Lover:",$("range").value]; 
 	    item.addnotes       =["Add Notes:",$("addnotes").value];
 	 //save data ito local storage: Use stringify to convert object to a string.
@@ -213,7 +213,7 @@ function editItem(){
 	for(var i=0; i<radios.length; i++){
 		if(radios[i].value == "Dating" && item.same[1] == "Dating"){ //check
 			radios[i].setAttribute("checked", "checked");
-		}else if(radios[i].value == "A couple" && item.same[1] == "A couple"){
+		}else if(radios[i].value == "Acouple" && item.same[1] == "Acouple"){
 			radios[i].setAttribute("checked", "checked");
 		}
 	}

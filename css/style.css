@@ -118,6 +118,10 @@ label{
 	font-weight: bold;
 	
 	}*/
+li#select{
+	padding-bottom: 10px;
+}
+
 
 
 li{
@@ -128,14 +132,23 @@ li{
 	padding-top:0.2em;
 	
 }
-input{
-	display:block;
-	/*text-align: justify;*/
-	
-}
+
 
 ul.checkbox{
-	margin-right: 20px;
+   display: block;
+   padding-bottom: 0px;
+   padding-top: 4px;
+   margin-left: 0px;
+
+}
+
+ul.checkbox label{
+	display: inline;
+	text-align: left;
+
+}
+
+input.dating {
 	
 }
 /*ulinput {
@@ -158,13 +171,14 @@ font-weight:  bold;
 
 color:  red;
 }
-ul.checkbox li{
-	display: block;
+
+input#range{
+	padding-top: 5px;
+	padding-bottom: 10px;
 }
 
-
 input#submit{
-	margin-left: 2px;
+	margin-left: 1px;
 }
 
 nav{
@@ -173,6 +187,20 @@ nav{
 	font-family: Arial,  sans-serif;
 }
 
+input#A couple li {
+	padding-bottom: 8px;
+	
+}
+
+
+ul#questions li{
+	padding-bottom: 3px;
+
+}
+
+input#A couple li{
+	
+}
 
 a{
  color:#0d8f4a;
@@ -181,6 +209,18 @@ a{
  text-align: center;
  display: block;
  font-style: italic;
+}
+div#items li{
+	text-align: justify;
+}
 
+div#items ul{
+	background-color: #E0E0DA;
+}
+
+div#items a {
+     color: #0d8f4a; 
+    display: block;
+    text-align: justify;
 }
 
