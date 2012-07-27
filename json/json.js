@@ -12,7 +12,7 @@ var json = {
 		"where": ["Where:", "Philly"],
 		"startd": ["Start Date:", "2009-09-12"],
 		"endd": ["End Date:", "2012-07-19"],
-		"zodiac": ["Relationship Status:", "couple"],
+		"zodiac": ["Relationship Status:", "zodiacValue"],
 		"range":  ["Rate My Lover:", "10"],
 		"addnotes": ["Add Notes:", "hi"]
 	},
@@ -24,7 +24,7 @@ var json = {
 		"where": ["Where:", "The Works"],
 		"startd": ["Start Date:", "2012-06-12"],
 		"endd":  ["End Date:", "2012-06-12"],
-		"zodiac": ["Relationship Status:", "dating"],
+		"zodiac": ["Relationship Status:", "zodiacValue"],
 		"range": ["Rate My Lover:", "0"],
 		"addnotes": ["Add Notes:", "had fun"]
 	},
@@ -36,7 +36,7 @@ var json = {
 		"where": ["Where:", "here"],
 		"startd": ["Start Date:", "2012-09-12"],
 		"endd":   ["End Date:", "2012-07-19"],
-		"zodiac":["Relationship Status:", "couple"],
+		"zodiac":["Relationship Status:", "zodiacValue"],
 		"range":  ["Rate My Lover:", "9"],
 		"addnotes": ["Add Notes:", "still together!"]
     }

@@ -211,9 +211,9 @@ function editItem(){
 	$("endd").value  =item.endd[1];
 	var radios = document.forms[0].same;
 	for(var i=0; i<radios.length; i++){
-		if(radios[i].value == "Dating" && item.same[1] == "Dating"){ //check
+		if(radios[i].value == "Yes" && item.same[1] == "Yes"){ //DATING
 			radios[i].setAttribute("checked", "checked");
-		}else if(radios[i].value == "Acouple" && item.same[1] == "Acouple"){
+		}else if(radios[i].value == "NO" && item.same[1] == "No"){ //A couple
 			radios[i].setAttribute("checked", "checked");
 		}
 	}
