@@ -1,6 +1,6 @@
 //Bernice Johnson
-//Project 3
-// Visual Frameworks 12/07
+//Project 1
+// MIU 12/07
 
 
 //wait until the dom is ready.
